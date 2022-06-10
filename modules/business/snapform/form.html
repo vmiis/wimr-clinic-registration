@@ -75,7 +75,7 @@
             $('#submit__ID').on('click',function(){
 				var First_Name=$('#F__ID input[name=First_Name]').val();
                 var Last_Name=$('#F__ID input[name=Last_Name]').val();
-                var Date_of_Birth=$('#F__ID input[name=Date_of_Birth]').val();
+                var Date_of_Birth=$vm.yyyymmdd_to_ddmmyyyy($('#F__ID input[name=Date_of_Birth]').val());
                 var Patient=$('#F__ID select[name=Patient]').val();
                 var Adult=$('#F__ID select[name=Adult]').val();
                 var Research=$('#F__ID select[name=Research]').val();
